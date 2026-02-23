@@ -1,91 +1,160 @@
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #111;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #ffffff;
 }
 
+/* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #eee;
+  background: white;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #111;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
 }
 
+/* HERO */
 .hero {
-    background: #f5f5f5;
-    padding: 100px 40px;
-    text-align: center;
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1600") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: black;
-    color: white;
-    text-decoration: none;
+.hero-overlay {
+  background: rgba(0, 40, 80, 0.55);
+  color: white;
+  text-align: center;
+  padding: 60px;
 }
 
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero button {
+  padding: 14px 40px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FEATURES STRIP */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 25px;
+  background: #f4f7fa;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* PRODUCTS */
 .products {
-    padding: 80px 40px;
-    text-align: center;
+  padding: 100px 60px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.products h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: 500;
 }
 
 .product-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .product-card {
-    border: 1px solid #eee;
-    padding: 20px;
-    width: 250px;
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .product-card button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: black;
-    color: white;
-    border: none;
+  padding: 10px 20px;
+  background: #002b45;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.values {
-    background: #fafafa;
-    padding: 80px 40px;
-    text-align: center;
+/* SCIENCE */
+.science {
+  display: flex;
+  align-items: center;
+  padding: 100px 60px;
+  gap: 60px;
+  background: white;
 }
 
-.value-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
+.science-text {
+  width: 50%;
 }
 
-.newsletter {
-    padding: 80px 40px;
-    text-align: center;
+.science-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
+.science-image {
+  width: 50%;
+  height: 450px;
+  background: url("https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=1600") center/cover no-repeat;
+}
+
+/* LUXURY BEIGE SECTION */
+.luxury {
+  background: #efe8de;
+  padding: 120px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+/* FOOTER */
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: white;
+  font-size: 14px;
 }
