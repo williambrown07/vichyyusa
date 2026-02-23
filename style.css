@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #111;
+}
+
+.hero {
+    background: #f5f5f5;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 20px;
+    width: 250px;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.values {
+    background: #fafafa;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.value-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.newsletter {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
